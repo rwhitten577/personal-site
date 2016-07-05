@@ -207,6 +207,10 @@ input[type=text] {
   border-bottom: 2px solid transparent;
 }
 
+.menu-icon {
+  margin-left: 50px;
+}
+
 .menu a:hover {
   border-bottom: 2px solid #1ba031;
 }
@@ -249,7 +253,7 @@ input[type=text] {
 }
 
 #postgres img {
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 20px;
   padding-right: 0px;
 }
@@ -269,13 +273,13 @@ input[type=text] {
 
 #ruby img {
   padding-top: 13px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
-// #sinatra img {
-//   padding-top: 20px;
-//   padding-bottom: 37px;
-// }
+#sinatra img {
+  padding-top: 20px;
+  padding-bottom: 37px;
+}
 
 #skills {
   background-color: #F5F5F5;
@@ -332,6 +336,8 @@ textarea {
 .top-bar {
   background-color: rgba(0,0,0,0.55);
 }
+
+$topbar-menu-icon-position: $default-float !default; 
 
 .top-bar ul {
   background-color: transparent;
