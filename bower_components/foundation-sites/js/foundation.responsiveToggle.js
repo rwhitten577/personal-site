@@ -52,7 +52,7 @@ class ResponsiveToggle {
     var _this = this;
 
     this._updateMqHandler = this._update.bind(this);
-    
+
     $(window).on('changed.zf.mediaquery', this._updateMqHandler);
 
     this.$toggler.on('click.zf.responsiveToggle', this.toggleMenu.bind(this));
@@ -82,7 +82,7 @@ class ResponsiveToggle {
    * @function
    * @fires ResponsiveToggle#toggled
    */
-  toggleMenu() {   
+  toggleMenu() {
     if (!Foundation.MediaQuery.atLeast(this.options.hideFor)) {
       this.$targetMenu.toggle(0);
 
@@ -97,9 +97,9 @@ class ResponsiveToggle {
   destroy() {
     this.$element.off('.zf.responsiveToggle');
     this.$toggler.off('.zf.responsiveToggle');
-    
+
     $(window).off('changed.zf.mediaquery', this._updateMqHandler);
-    
+
     Foundation.unregisterPlugin(this);
   }
 }

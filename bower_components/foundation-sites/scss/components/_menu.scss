@@ -28,7 +28,7 @@ $menu-item-background-active: map-get($foundation-palette, primary) !default;
 
 /// Spacing between an icon and text in a menu item.
 /// @type Number
-$menu-icon-spacing: 0.25rem !default;
+$menu-icon-spacing: 0.5rem !default;
 
 /// Creates the base styles for a Menu.
 @mixin menu-base {

@@ -12,55 +12,51 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <header id="top">
-    <nav>
-    <div data-sticky-container>
-      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="about">
-        <div class="top-bar-title">
-          <img class="logo" src="assets/images/logo1.png"/>
-          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-            <button class="menu-icon light" type="button" data-toggle></button>
-          </span>
-        </div>
-        <div id="responsive-menu">
-          <div class="top-bar-right">
-            <ul class="dropdown menu vertical medium-horizontal" data-responsive-menu="accordion medium-dropdown">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skill Set</a></li>
-              <li class="is-dropdown-submenu-parent opens-right">
-                <a href="#web-work">Work</a>
-                <ul class="menu vertical">
-                  <li><a href="#web-work">Web</a></li>
-                  <li><a href="https://youtube.com/rwhitten577" target="_blank">Video</a></li>
-                  <li><a href="http://treadingwaterband.bandcamp.com" target="_blank">Music</a></li>
-                </ul>
-              </li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header>
+      <span id="top"></span>
+      <nav>
+      <div data-sticky-container>
+        <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="about">
+          <div class="top-bar-title">
+            <a href="#" id="logo-nav"><img class="logo" src="assets/images/logo1.png"/></a>
+            <span class="responsive-menu" data-responsive-toggle="responsive-menu" data-hide-for="large">
+              <button class="menu-icon light" type="button" data-toggle></button>
+            </span>
+          </div>
+          <div id="responsive-menu">
+            <div class="top-bar-right">
+              <ul class="dropdown menu vertical medium-horizontal" data-responsive-menu="accordion medium-dropdown">
+                <li><a class="menuItem" id="about-nav" href="#about">About</a></li>
+                <li><a class="menuItem" id="skills-nav" href="#skills">Skill Set</a></li>
+                <li class="is-dropdown-submenu-parent opens-right">
+                  <a href="#web-work" id="work-nav">Work</a>
+                  <ul class="menu vertical">
+                    <li><a class="menuItem" id="work-nav" href="#web-work">Web</a></li>
+                    <li><a class="menuItem" href="https://youtube.com/rwhitten577" target="_blank">Video</a></li>
+                    <li><a class="menuItem" href="http://treadingwaterband.bandcamp.com" target="_blank">Music</a></li>
+                  </ul>
+                </li>
+                <li><a href="#resume" id="resume-nav">Resume</a></li>
+                <li><a href="#contact" id="contact-nav">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </nav>
-      <div class="row valign-center">
-        <div class="hero-box valign-center small-10 medium-6 small-centered columns">
-          <h1>
+      </nav>
+      <div class="inner row">
+        <div class="hero-box small-10 small-centered columns">
+          <h1 class="small-8 small-centered columns">
               Ryan Whitten
           </h1>
-          <span class="hero-small-text"><p class="small-12 medium-8 small-centered columns">
+          <span class="hero-small-text"><p class="small-8 medium-8 small-centered columns">
             Hi, I'm a Web Developer based in Boston, MA.</span>
           </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="learn-more small-10 small-centered columns">
-          Learn More
-        </div>
-      </div>
-      <div class="row valign-center">
-        <div class="chevron-button small-3 medium-1 small-centered columns">
-          <a href="#about"><i class="chevron fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i></a>
+        <div class="row">
+          <div class="learn-more small-10 small-centered columns">
+            <a href="#about"><p>Learn More</p><i class="chevron fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     </header>
@@ -87,19 +83,19 @@
             <div class="logos row">
               <div class="small-10 medium-10 large-8 small-centered columns">
                 <div class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/html-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/html-logo.png">
                     <strong>HTML5</strong>
                 </div>
                 <div class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/css-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/css-logo.png">
                     <strong>CSS3</strong>
                 </div>
                 <div class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/js-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/js-logo.png">
                     <strong>JavaScript</strong>
                 </div>
                 <div class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/react-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/react-logo.png">
                     <strong>React</strong>
                 </div>
               </div>
@@ -107,19 +103,19 @@
             <div class="logos row">
               <div class="small-10 medium-10 large-8 small-centered columns">
                 <div id="ruby" class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/ruby-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/ruby-logo.png">
                     <strong>Ruby</strong>
                 </div>
                 <div id="rails" class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/Rails-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/Rails-logo.png">
                     <strong>Rails</strong>
                 </div>
                 <div id="sinatra" class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/sinatra-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/sinatra-logo.png">
                     <strong>Sinatra</strong>
                 </div>
                 <div id="postgres" class="skills-logo small-6 medium-3 columns">
-                    <img src="assets/images/tech_icons/postgres-logo.png">
+                    <img class="logo-img" src="assets/images/tech_icons/postgres-logo.png">
                     <strong>PostgreSQL</strong>
                 </div>
               </div>
@@ -160,7 +156,7 @@
         <div class="small-11 medium-6 columns">
             <h3>Let's Connect</h3>
             <ul class="connect-icons">
-                <li><a href="http://linkedin.com/whittenryan" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="http://linkedin.com/in/whittenryan" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
                 <li><a href="http://github.com/rwhitten577" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
                 <li><a href="http://instagram.com/rwhitten577" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
                 <li><a href="http://youtube.com/rwhitten577" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
@@ -190,5 +186,6 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jquery-scrollto/lib/jquery-scrollto.js"></script>
   </body>
 </html>
